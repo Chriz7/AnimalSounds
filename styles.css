@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* repeating 4 columns all of equal sizes */
+    gap: 10px;
+    height: 80vh;
+}
+
+.gridContainer > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    border-radius: 30px;
+}
+
+.gridContainer > button > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emoji {
+    font-size: 5rem; /* Adjust emoji size if needed */
+}
+
+.Label {
+    font-size: 1.8rem; /* Adjust label size */
+    margin-top: 10px; /* Adjust spacing between emoji and label */
+    color: rgb(0, 0, 0); /* Set text color to black */
+}
+
+/* Button background colors */
+.Snake {
+    background-color: rgb(70, 128, 70);
+}
+.Eagle {
+    background-color: rgb(44, 223, 255);
+}
+.Lion {
+    background-color: rgb(255, 220, 105);
+}
+.Elephant {
+    background-color: rgb(194, 194, 194);
+}
+.Monkey {
+    background-color: rgb(255, 123, 35);
+}
+.Cricket {
+    background-color: rgb(202, 138, 86);
+}
+.Giraffe {
+    background-color: rgb(209, 195, 0);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+    .gridContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
